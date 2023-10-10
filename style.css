@@ -24,7 +24,6 @@ body {
     margin: 0;
 }
 
-
 .side-menu h1 {
     margin-top: 0; 
 }
@@ -46,7 +45,7 @@ body {
 }
 
 .menu-item:hover {
-    color: #939598;      /
+    color: #939598;      
 }
 
 
@@ -67,7 +66,6 @@ body {
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    
 }
 
 .message-list h2, .message-list h3 {
@@ -90,7 +88,8 @@ body {
     cursor: pointer;    
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
-    color: white; 
+    color: white;
+    box-sizing: border-box; 
 }
 
 .new-message-btn:hover {
@@ -105,7 +104,6 @@ body {
     flex-direction: column;
 }
 
-
 .message-list li {
     display: flex;
     align-items: center; 
@@ -114,9 +112,6 @@ body {
     border: 1px solid #909BAA; 
     border-radius: 8px; 
 }
-
-
-
 
 .dock-number-box {
     width: 50px;
@@ -128,6 +123,9 @@ body {
     justify-content: center;
     font-weight: bold; 
     margin-right: 20px;
+    border: None;
+    border-radius: 10px; 
+
 }
 
 .message-content {
@@ -174,7 +172,7 @@ h2 {
 h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
-    color: #1D385C; /
+    color: #1D385C; 
 }
 
 h4 {
@@ -191,4 +189,32 @@ h5 {
 
 p {
     font-size: 0.9em;
+}
+
+.new-message {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100vh; /* viewport height */
+}
+
+.new-message > * {
+    width: 100%;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Adjusted to match the button's vertical padding */
+    margin: 10px 0;
+    border: 1px solid #909BAA;
+    border-radius: 10px; /* Adjusted to match the button's border-radius */
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Specific targeting for the textarea */
+.message-input#message {
+    flex-grow: 1; /* Allow it to consume the available space */
 }
