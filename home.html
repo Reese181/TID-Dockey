@@ -6,33 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dockey - Homepage</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="side-menu">
         <div class="image-container">
-            <img src="sailboat.png" alt="boat" width="100px" height="100px">
+            <img src="png/sailboat.png" alt="boat" width="100px" height="100px">
         </div>
         <h1>Dockey</h1>
         <a href="home.html" class="menu-item">
-            <img src="house-icon.png" alt="Home">
+            <img src="png/house-icon.png" alt="Home">
             <span>Home</span>
         </a>
     
         <a href="inbox.html" class="menu-item">
-            <img src="speech-icon.png" alt="Inbox">
+            <img src="png/speech-icon.png" alt="Inbox">
             <span>Inbox</span>
         </a>
     
         <a href="settings.html" class="menu-item">
-            <img src="person-icon.png" alt="Settings">
+            <img src="png/person-icon.png" alt="Settings">
             <span>Settings</span>
         </a>
     
         <a href="harbor-info.html" class="menu-item">
-            <img src="harbor-icon.png" alt="Harbor Information">
+            <img src="png/harbor-icon.png" alt="Harbor Information">
             <span>Harbor</span>
         </a>
     </div>
@@ -41,7 +41,9 @@
     <h2>Welcome, Fleming</h2>
     <div class="inbox-header">
         <h3>YOUR INBOX:</h3>
-        <button class="new-message-btn">Send New Message</button>
+        <form action="new-message.html">
+            <button class="new-message-btn">Create New Message</button>
+        </form>
     </div>
     
     <div class="inbox-container">
